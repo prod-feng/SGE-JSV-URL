@@ -26,7 +26,7 @@ jsv_on_verify(sub {
           #jsv_set_param('p',200);
           #jsv_sub_add_param('l_hard', 'ngpus',1);
           if (exists $params{l_hard}) {
-            jsv_sub_add_param('l_hard', 'ngpus',1);
+            #jsv_sub_add_param('l_hard', 'ngpus',1);
             if (exists $params{l_hard}{ngpus}) {
               my $lgpus = $params{l_hard}{ngpus};
               if (($lgpus) > 1) {
